@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9084759005293430857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9084759005293430859}
+  - component: {fileID: 9084759005293430858}
+  m_Layer: 0
+  m_Name: ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9084759005293430859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9084759005293430857}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5860877, y: 13.18, z: -9.760146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9084759005293430858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9084759005293430857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e50d785290c0164ca2dc0645b4eb44e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tag: Bullet
+    prefab: {fileID: 1792017725070159619, guid: 2c09e4c212984af4da3093d73ad49140, type: 3}
+    size: 15
+  - tag: Rock
+    prefab: {fileID: 2446715016906458069, guid: 7a55c6ed9844614439ea54f81040866a, type: 3}
+    size: 15
+  - tag: damageEffect
+    prefab: {fileID: 5965035547622757909, guid: 3a27ab0280b8169469f3f26b02521f85, type: 3}
+    size: 5
+  - tag: shootEffect
+    prefab: {fileID: 201407418499862038, guid: d79fb53fc9b4c67428e030c94968f1e4, type: 3}
+    size: 15
+  - tag: OXYGEN
+    prefab: {fileID: 2694693218357320556, guid: 4062ab04586720c46b2b7c0ed1827a8f, type: 3}
+    size: 5
+  - tag: GEM
+    prefab: {fileID: 6718107152761007258, guid: 45ab703524398c349902dfa08c014bb1, type: 3}
+    size: 5
+  - tag: HEALTH
+    prefab: {fileID: 6485021173265096850, guid: 4e53eb1bf44fd104cb67d37eac2a3c68, type: 3}
+    size: 5
